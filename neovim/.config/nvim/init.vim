@@ -10,7 +10,6 @@ call plug#begin()
   Plug 'lifepillar/vim-gruvbox8'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-commentary'
-  Plug 'lifepillar/vim-gruvbox8'
   Plug 'stevearc/vim-arduino'
 call plug#end()
 " Plugins END
@@ -37,7 +36,7 @@ setlocal wrap
 "------------------------------------------------
 " persist START
 set undofile " Maintain undo history between sessions
-set undodir=~/.vim/undodir
+set undodir=~/.nvim/undodir
 
 " Persist cursor
 autocmd BufReadPost *
