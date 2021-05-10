@@ -63,3 +63,7 @@ alias gcm="git commit -a -m "
 alias gcms="git commit -a -s -m "
 alias gs="git status"
 alias gp="git push"
+
+if [ -f $HOME/.zsh_env.sh ]; then
+	source .zsh_env.sh
+fi
