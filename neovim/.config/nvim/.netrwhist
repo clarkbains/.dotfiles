@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/cbainswork/.dotfiles/zsh'
+let g:netrw_dirhist_2='/home/cbainswork/Development/debug'
+let g:netrw_dirhist_1='/home/cbainswork/Development'
+let g:netrw_dirhist_0='/home/cbainswork/Development/debug'
+let g:netrw_dirhist_9='/home/cbainswork/Downloads'
+let g:netrw_dirhist_8='/home/cbains/.dotfiles/zsh'
+let g:netrw_dirhist_7='/home/cbains/.dotfiles'
+let g:netrw_dirhist_6='/home/cbains/.dotfiles/neovim/.config/nvim'
+let g:netrw_dirhist_5='/home/cbains/.dotfiles/neovim/.config'
+let g:netrw_dirhist_4='/home/cbains/.dotfiles/neovim'
