@@ -50,6 +50,9 @@ zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 bindkey "^[[A" history-beginning-search-backward-end
 bindkey "^[[B" history-beginning-search-forward-end
+bindkey  "^[[H"   beginning-of-line
+bindkey  "^[[F"   end-of-line
+bindkey  "^[[3~"  delete-char
 
 alias ls="ls --color=auto"
 alias ll="ls -l"
@@ -65,5 +68,5 @@ alias gs="git status"
 alias gp="git push"
 
 if [ -f $HOME/.zsh_env.sh ]; then
-	source .zsh_env.sh
+	source $HOME/.zsh_env.sh
 fi
