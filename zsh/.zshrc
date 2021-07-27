@@ -63,7 +63,7 @@ alias logs="docker-compose logs"
 alias up="docker-compose up -d"
 alias upf="docker-compose up"
 alias gcm="git commit -a -m "
-alias gcms="git commit -a -s -m "
+alias gcms="git commit -a -sS -m "
 alias gs="git status"
 alias gp="git push"
 
