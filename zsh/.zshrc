@@ -66,7 +66,10 @@ alias gcm="git commit -a -m "
 alias gcms="git commit -a -sS -m "
 alias gs="git status"
 alias gp="git push"
-
+alias "yay -R"="yay -sR"
+alias "vsh"="vagrant ssh"
+alias "vls"="vagrant global-status"
+alias "v"="vagrant"
 if [ -f $HOME/.zsh_env.sh ]; then
 	source $HOME/.zsh_env.sh
 fi

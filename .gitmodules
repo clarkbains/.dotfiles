@@ -1,0 +1,3 @@
+[submodule "neovim/.config/nvim/plugged/suda.vim"]
+	path = neovim/.config/nvim/plugged/suda.vim
+	url = https://github.com/lambdalisue/suda.vim.git
