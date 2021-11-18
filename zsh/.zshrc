@@ -70,6 +70,20 @@ alias "yay -R"="yay -sR"
 alias "vsh"="vagrant ssh"
 alias "vls"="vagrant global-status"
 alias "v"="vagrant"
+catp() {
+  if [[ $# -lt 1 ]]; then
+    echo "Provide a Path"
+    return
+  fi
+  echo `which $1`
+  cat `which $1`
+}
 if [ -f $HOME/.zsh_env.sh ]; then
 	source $HOME/.zsh_env.sh
 fi
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/waypoint waypoint
+load-resources() {
+  autoload -X
+}
