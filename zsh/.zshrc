@@ -66,7 +66,13 @@ alias gcm="git commit -a -m "
 alias gcms="git commit -a -sS -m "
 alias gs="git status"
 alias gp="git push"
+alias ga="git add"
 
+function rpcp {
+	file_path=`realpath -z $@`
+	echo $file_path
+	echo $file_path | xclip -selection clipboard
+}
 if [ -f $HOME/.zsh_env.sh ]; then
 	source $HOME/.zsh_env.sh
 fi
