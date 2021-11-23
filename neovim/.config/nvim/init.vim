@@ -10,6 +10,7 @@ call plug#begin()
   Plug 'lifepillar/vim-gruvbox8'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'tpope/vim-commentary'
+  Plug 'lambdalisue/suda.vim'
   Plug 'stevearc/vim-arduino'
 call plug#end()
 " Plugins END
