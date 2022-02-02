@@ -66,6 +66,14 @@ alias gcm="git commit -m "
 alias gcms="git commit -sS -m "
 alias gs="git status"
 alias gp="git push"
+alias ga="git add"
+
+function rpcp {
+	file_path=`realpath -z $@`
+	echo $file_path
+	echo $file_path | xclip -selection clipboard
+}
+
 alias "yay -R"="yay -sR"
 alias "vsh"="vagrant ssh"
 alias "vls"="vagrant global-status"
@@ -83,7 +91,6 @@ if [ -f $HOME/.zsh_env.sh ]; then
 fi
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /usr/bin/waypoint waypoint
 load-resources() {
   autoload -X
 }
