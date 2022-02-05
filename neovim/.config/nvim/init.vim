@@ -115,6 +115,7 @@ au FileType markdown vmap <Leader><Bslash> :EasyAlign*<Bar><Enter>
 " Toggle between buffers
 nmap <Leader>bn :bn<CR>
 nmap <Leader>bp :bp<CR>
+nmap <Leader>bd :bdelete<CR>
 nnoremap <C-p> :Rg<Cr>
 nnoremap <C-e> :Files<Cr>
 nmap <Leader>bl :Buffers<CR>
