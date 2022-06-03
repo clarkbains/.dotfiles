@@ -24,7 +24,7 @@ unsetopt beep
 #[ -f "$SUGGEST" ] && source "$SUGGEST"
 plugins=(
   #zsh-syntax-highlighting
-  #zsh-autosuggestions
+  zsh-autosuggestions
 )
  
 
@@ -47,6 +47,7 @@ export LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;
 
 setopt AUTO_PUSHD
 setopt prompt_subst
+setopt PRINT_EXIT_VALUE
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' actionformats \
     '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
@@ -65,8 +66,8 @@ vcs_info_wrapper() {
 }
 
 
-source $HOME/.config/zsh/zsh-git-prompt/zshrc.sh
-PROMPT='%F{blue}%n%F{yellow}@%F{green}%m $(git_super_status)%F{yellow}%25<..<%~%<< %F{white}%f'
+#source $HOME/.config/zsh/zsh-git-prompt/zshrc.sh
+PROMPT='%F{blue}%n%F{yellow}@%F{green}%m %F{yellow}%25<..<%~%<< %F{white}%f'
 #PROMPT='%B%m%~%b$(git_super_status) %# '
 ZSH_THEME_GIT_PROMPT_UNTRACKED=""
 ZSH_THEME_GIT_PROMPT_SUFFIX="] "
@@ -123,11 +124,12 @@ catp() {
   echo `which $1`
   cat `which $1`
 }
-if [ -f $HOME/.zsh_env.sh ]; then
-	source $HOME/.zsh_env.sh
-fi
 
 autoload -U +X bashcompinit && bashcompinit
 load-resources() {
   autoload -X
 }
+
+if [ -f $HOME/.zsh_env.sh ]; then
+	source $HOME/.zsh_env.sh
+fi
